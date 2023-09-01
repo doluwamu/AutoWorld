@@ -13,14 +13,14 @@ export default {
         <input
           type="text"
           placeholder="Enter email..."
-          class="p-3 rounded-lg outline-none"
+          class="sub-input p-3 rounded-lg outline-none"
           style="font-size: 12px; width: 220px !important"
           required
         />
         <input
           type="submit"
           value="Subscribe"
-          class="py-3 px-4 bg-main rounded-lg text-white font-black"
+          class="py-3 px-4 bg-main rounded-lg text-white font-black cursor-pointer"
           style="font-size: 12px"
         />
       </form>
@@ -50,4 +50,8 @@ export default {
   </section>
 </template>
 
-<style></style>
+<style>
+.sub-input {
+  box-shadow: 0 0 10px 0.5px #dedede;
+}
+</style>

@@ -8,3 +8,9 @@ body {
   font-family: 'Quicksand', sans-serif;
   /* color: ; */
 }
+
+input,
+textarea,
+button {
+  outline: none;
+}
