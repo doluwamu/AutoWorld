@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <section class="hero flex flex-col-reverse py-12 px-6 bg-subOrange md:flex-row">
+  <section class="hero flex flex-col-reverse py-20 px-6 bg-subOrange md:flex-row">
     <div
       class="flex flex-col justify-center items-center gap-6 px-2 pt-12 md:items-start md:pt-2 md:px-8 md:w-1/2"
     >
