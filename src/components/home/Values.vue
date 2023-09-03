@@ -18,6 +18,7 @@ export default {
   >
     <div
       v-for="value in values"
+      :key="value.id"
       class="card flex flex-col gap-6 items-center bg-white rounded-lg px-4 py-6"
     >
       <img :src="value.image" alt="img" class="rounded-full" style="width: 150px; height: 150px" />

@@ -2,17 +2,37 @@
 import Typed from 'typed.js'
 import { ref } from 'vue'
 
-const el = ref(null)
 export default {
   name: 'Hero',
 
+  data() {
+    return {
+      typed: null
+    }
+  },
+
+  setup() {
+    const email = ref('')
+
+    const handleSubmit = () => {
+      // console.log(email.value)
+      return
+    }
+
+    return { email, handleSubmit }
+  },
+
   mounted() {
-    new Typed(this.$refs.provs, {
+    this.typed = new Typed(this.$refs.provs, {
       strings: ['Sell', 'Buy', 'Bargain'],
       typeSpeed: 200,
       backSpeed: 200,
       loop: true
     })
+  },
+
+  unmounted() {
+    this.typed.destroy()
   }
 }
 </script>
@@ -22,11 +42,12 @@ export default {
     <div
       class="flex flex-col justify-center items-center gap-6 px-2 pt-12 md:items-start md:pt-2 md:px-8 md:w-1/2"
     >
-      <form action="" class="flex gap-2">
+      <form @submit.prevent="handleSubmit" class="flex gap-2">
         <input
           type="text"
           placeholder="Enter email..."
           class="sub-input p-3 rounded-lg outline-none"
+          v-model="email"
           style="font-size: 12px; width: 220px !important"
           required
         />

@@ -3,7 +3,12 @@
     <h1 class="text-4xl text-center font-black py-10">Top sellers</h1>
 
     <div class="flex flex-col flex-wrap gap-20 justify-center px-2 sm:flex-row">
-      <div class="car-card flex flex-col gap-6 sm:w-1/3" v-for="car in carStore.cars">
+      <div
+        class="car-card flex flex-col gap-6 sm:w-1/3"
+        v-if="cars.length > 0"
+        v-for="car in cars"
+        :key="car.id"
+      >
         <!-- top -->
         <div class="">
           <div class="flex justify-between items-center">
@@ -32,14 +37,15 @@
         <div class="flex justify-between px-2">
           <p class="font-black text-2xl">{{ car.name }}</p>
 
-          <p class="font-black text-blue">
-            {{ numLenCheck(car.price) }}
-          </p>
+          <p class="font-black text-blue">${{ numLenCheck(car.price) }}</p>
         </div>
       </div>
 
       <!-- Extra card -->
-      <div class="flex flex-col p-0 sm:w-1/3" style="height: 0"></div>
+      <div class="flex flex-col p-0 sm:w-1/3" style="height: 0" v-if="cars.length > 0"></div>
+
+      <!-- No cars found -->
+      <div class="font-bold text-center" v-if="cars.length < 1">No cars found</div>
     </div>
   </section>
 </template>
@@ -47,12 +53,15 @@
 <script>
 import { useCarStore } from '../../stores/cars'
 import { numLenCheck } from '../../helper/numbers'
+import { storeToRefs } from 'pinia'
 
 export default {
   setup() {
     const carStore = useCarStore()
 
-    return { carStore }
+    const { cars } = storeToRefs(carStore)
+
+    return { cars }
   },
 
   data() {

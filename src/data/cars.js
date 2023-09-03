@@ -6,6 +6,7 @@ import revoluto from '../assets/img/home/revoluto.png'
 
 const cars = [
   {
+    id: 1,
     image: tacoma,
     name: 'Tacoma',
     company: 'Toyota',
@@ -17,6 +18,7 @@ const cars = [
     paymentPeriod: 7
   },
   {
+    id: 2,
     image: threeSeries,
     name: '3 Series Sedan',
     company: 'BMW',
@@ -28,6 +30,7 @@ const cars = [
     paymentPeriod: 4
   },
   {
+    id: 3,
     image: fiveSeries,
     name: '5 Series Sedan',
     company: 'BMW',
@@ -39,6 +42,7 @@ const cars = [
     paymentPeriod: 7
   },
   {
+    id: 4,
     image: mercedez,
     name: 'Mercedez',
     company: 'Benz',
@@ -50,6 +54,7 @@ const cars = [
     paymentPeriod: 2
   },
   {
+    id: 5,
     image: revoluto,
     name: 'Revoluto',
     company: 'Lamborghini',
