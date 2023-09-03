@@ -2,7 +2,7 @@
   <section class="">
     <h1 class="text-4xl text-center font-black py-10">Top sellers</h1>
 
-    <div class="flex flex-col flex-wrap gap-12 justify-center px-2 sm:flex-row">
+    <div class="flex flex-col flex-wrap gap-20 justify-center px-2 sm:flex-row">
       <div class="car-card flex flex-col gap-6 sm:w-1/3" v-for="car in carStore.cars">
         <!-- top -->
         <div class="">
@@ -30,7 +30,7 @@
 
         <!-- buttom -->
         <div class="flex justify-between px-2">
-          <p class="font-black">{{ car.name }}</p>
+          <p class="font-black text-2xl">{{ car.name }}</p>
 
           <p class="font-black text-blue">
             {{ numLenCheck(car.price) }}

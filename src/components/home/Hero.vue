@@ -1,6 +1,19 @@
 <script>
+import Typed from 'typed.js'
+import { ref } from 'vue'
+
+const el = ref(null)
 export default {
-  name: 'Hero'
+  name: 'Hero',
+
+  mounted() {
+    new Typed(this.$refs.provs, {
+      strings: ['Sell', 'Buy', 'Bargain'],
+      typeSpeed: 200,
+      backSpeed: 200,
+      loop: true
+    })
+  }
 }
 </script>
 
@@ -27,7 +40,7 @@ export default {
 
       <div class="flex flex-col gap-2">
         <h1 class="text-5xl font-black text-center md:text-left">
-          We <span class="text-main">Buy|</span>
+          We <span ref="provs" class="text-main"></span>
         </h1>
         <p class="text-3xl font-black text-center md:text-left">
           Get the best deal for your next car
@@ -53,5 +66,9 @@ export default {
 <style>
 .sub-input {
   box-shadow: 0 0 10px 0.5px #dedede;
+}
+
+.typed-cursor {
+  color: hsl(18, 99%, 49%);
 }
 </style>
