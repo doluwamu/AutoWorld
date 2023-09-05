@@ -13,13 +13,13 @@ export default {
 
 <template>
   <section
-    class="flex flex-col justify-center gap-6 pb-10 px-4 md:flex-row md:px-10"
+    class="flex flex-col justify-center gap-6 pb-10 px-4 sm:flex-wrap sm:flex-row md:flex-nowrap md:px-10"
     style="margin-top: -40px"
   >
     <div
       v-for="value in values"
       :key="value.id"
-      class="card flex flex-col gap-6 items-center bg-white rounded-lg px-4 py-6"
+      class="card flex flex-col gap-6 items-center bg-white rounded-lg px-4 py-6 sm:w-1/3"
     >
       <img :src="value.image" alt="img" class="rounded-full" style="width: 150px; height: 150px" />
       <p class="text-3xl font-black text-center">{{ value.title }}</p>
@@ -28,6 +28,11 @@ export default {
         <span class="text-main text-center">Learn more</span>
       </a>
     </div>
+
+    <div
+      class="card flex flex-col gap-6 items-center bg-white rounded-lg px-4 sm:w-1/3 md:hidden"
+      style="height: 0"
+    ></div>
   </section>
 </template>
 

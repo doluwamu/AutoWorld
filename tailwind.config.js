@@ -16,7 +16,8 @@ module.exports = {
         deepOrange: 'hsl(18, 99%, 30%)',
         lightOrange: 'hsl(18, 97%, 58%)',
         blue: 'hsla(216, 100%, 31%, 1)',
-        lightBlue: 'hsla(216, 100%, 95%, 1)'
+        lightBlue: 'hsla(216, 100%, 95%, 1)',
+        grey: 'hsla(0, 0%, 64%, 1)'
       }
     }
   },
