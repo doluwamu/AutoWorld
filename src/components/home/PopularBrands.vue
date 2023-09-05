@@ -1,5 +1,5 @@
 <template>
-  <h1 class="text-5xl text-center font-black py-10 px-2">Explore popular brands</h1>
+  <h1 class="text-5xl text-center font-black py-20 px-2">Explore popular brands</h1>
 
   <Swiper
     :slides-per-view="1"
@@ -14,10 +14,10 @@
         slidesPerView: 1
       },
       '768': {
-        slidesPerView: 1.05
+        slidesPerView: 1.03
       },
       '1024': {
-        slidesPerView: 1.5
+        slidesPerView: 1.4
       }
     }"
     class="px-2"
@@ -25,18 +25,19 @@
     ref="mySwiper"
   >
     <SwiperSlide
-      class="flex flex-col relative gap-6 bg-grey p-4 rounded-lg md:flex-row"
+      class="flex flex-col relative gap-6 bg-white p-4 rounded-lg md:flex-row"
+      style="box-shadow: 0 0 15px 0.9px rgb(227, 227, 227)"
       v-for="car in cars"
       :key="car.id"
     >
       <!-- Image -->
-      <img :src="car.image" alt="img" class="w-1/2" />
+      <img :src="car.image" alt="img" class="w-1/2" style="max-height: 300px" />
 
       <!-- details -->
-      <div class="flex flex-col text-white justify-evenly gap-6">
+      <div class="flex flex-col text-black justify-evenly gap-6">
         <p class="text-left">{{ car.model }} Model</p>
 
-        <p class="text-3xl font-black text-left">{{ car.name }}</p>
+        <p class="text-4xl font-black text-left">{{ car.name }}</p>
 
         <p class="text-left">{{ car.description }}</p>
 
@@ -57,13 +58,13 @@
         <!-- Buttons -->
         <div class="flex gap-6 md:flex-row md:gap-8">
           <!-- Buy -->
-          <a href="#" class="bg-white py-2 px-4 rounded-full"
+          <a href="#" class="bg-offWhite py-2 px-4 rounded-full"
             ><span class="text-black text-center">Buy</span></a
           >
 
           <!-- Checkout -->
           <a href="#" class="bg-lightOrange py-2 px-4 rounded-full text-center"
-            ><span class="text-cebter">Checkout</span></a
+            ><span class="text-white">Checkout</span></a
           >
         </div>
       </div>

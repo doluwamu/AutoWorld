@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <section id="drive" class="flex flex-col gap-8 px-4 py-20 md:gap-4 md:flex-row">
+  <section id="drive" class="flex flex-col gap-8 px-4 py-20 my-20 md:gap-4 md:flex-row">
     <div class="flex flex-col gap-4 px-2 md:px-8 md:w-1/2">
       <h1 class="text-5xl font-black">Drive at your pace</h1>
       <p class="text-justify">
