@@ -34,7 +34,7 @@
         <img :src="car.image" alt="img" width="500" />
 
         <!-- buttom -->
-        <div class="flex justify-between px-2">
+        <div class="flex justify-between items-center px-2">
           <p class="font-black text-2xl">{{ car.name }}</p>
 
           <p class="font-black text-blue">${{ numLenCheck(car.price) }}</p>

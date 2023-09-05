@@ -14,6 +14,7 @@ module.exports = {
         main: 'hsl(18, 99%, 49%)',
         subOrange: 'hsla(18, 100%, 80%, 0.1)',
         deepOrange: 'hsl(18, 99%, 30%)',
+        lightOrange: 'hsl(18, 97%, 58%)',
         blue: 'hsla(216, 100%, 31%, 1)',
         lightBlue: 'hsla(216, 100%, 95%, 1)'
       }

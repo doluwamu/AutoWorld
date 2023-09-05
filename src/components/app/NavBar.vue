@@ -8,13 +8,13 @@ export default {
 
 <template>
   <div
-    class="flex justify-evenly items-center flex-wrap py-6 sticky top-0 bg-white md:flex-nowrap"
+    class="flex justify-evenly items-center flex-wrap py-6 sticky top-0 z-50 bg-white md:flex-nowrap"
     style="max-width: 1400px; margin: 0 auto"
   >
     <img src="../../assets/img/logo.png" alt="img" style="width: 120px; height: 30px" />
 
     <div class="flex gap-6 nav-links">
-      <RouterLink to="/home" class="font-bold">Home</RouterLink>
+      <a href="/#carzz" class="font-bold">Home</a>
       <RouterLink to="/cars" class="font-bold">Cars</RouterLink>
       <RouterLink to="/services" class="font-bold">Services</RouterLink>
       <RouterLink to="/supports" class="font-bold">Supports</RouterLink>
