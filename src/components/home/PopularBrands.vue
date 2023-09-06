@@ -1,5 +1,90 @@
 <template>
-  <h1 class="text-5xl text-center font-black py-20 px-2">Explore popular brands</h1>
+  <h1 class="text-4xl text-center font-black py-10 px-2 md:text-5xl">Explore popular brands</h1>
+
+  <Swiper
+    :slides-per-view="1.5"
+    :space-between="1"
+    :breakpoints="{
+      '250': {
+        slidesPerView: 2.5
+      },
+      '400': {
+        slidesPerView: 3.5
+      },
+      '640': {
+        slidesPerView: 4.5
+      },
+      '768': {
+        slidesPerView: 5.5
+      },
+      '1024': {
+        slidesPerView: 6
+      }
+    }"
+    class="py-8"
+    style="max-width: 1000px; margin: 0 auto"
+  >
+    <SwiperSlide>
+      <div
+        @click="filterCarsBrand('Toyota')"
+        class="car-brand flex flex-col items-center cursor-pointer"
+        style="max-width: 100%"
+      >
+        <p class="font-black text-center">Toyota</p>
+        <CarBrand :show="brand === 'Toyota' ? true : false" />
+      </div>
+    </SwiperSlide>
+    <SwiperSlide>
+      <div
+        @click="filterCarsBrand('Lamborghini')"
+        class="car-brand flex flex-col items-center cursor-pointer"
+        style="max-width: 100%"
+      >
+        <p class="font-black text-center">Lamborghini</p>
+        <CarBrand :show="brand === 'Lamborghini' ? true : false" />
+      </div>
+    </SwiperSlide>
+    <SwiperSlide>
+      <div
+        @click="filterCarsBrand('Benz')"
+        class="car-brand flex flex-col items-center cursor-pointer"
+        style="max-width: 100%"
+      >
+        <p class="font-black text-center">Benz</p>
+        <CarBrand :show="brand === 'Benz' ? true : false" />
+      </div>
+    </SwiperSlide>
+    <SwiperSlide>
+      <div
+        @click="filterCarsBrand('BMW')"
+        class="car-brand flex flex-col items-center cursor-pointer"
+        style="max-width: 100%"
+      >
+        <p class="font-black text-center">BMW</p>
+        <CarBrand :show="brand === 'BMW' ? true : false" />
+      </div>
+    </SwiperSlide>
+    <SwiperSlide>
+      <div
+        @click="filterCarsBrand('Ferrari')"
+        class="car-brand flex flex-col items-center cursor-pointer"
+        style="max-width: 100%"
+      >
+        <p class="font-black text-center">Ferrari</p>
+        <CarBrand :show="brand === 'Ferrari' ? true : false" />
+      </div>
+    </SwiperSlide>
+    <SwiperSlide>
+      <div
+        @click="filterCarsBrand('Bugatti')"
+        class="car-brand flex flex-col items-center cursor-pointer"
+        style="max-width: 100%"
+      >
+        <p class="font-black text-center">Bugatti</p>
+        <CarBrand :show="brand === 'Bugatti' ? true : false" />
+      </div>
+    </SwiperSlide>
+  </Swiper>
 
   <Swiper
     :slides-per-view="1"
@@ -27,7 +112,7 @@
     <SwiperSlide
       class="flex flex-col relative gap-6 bg-white p-4 rounded-lg md:flex-row"
       style="box-shadow: 0 0 15px 0.9px rgb(227, 227, 227)"
-      v-for="car in cars"
+      v-for="car in vehicles"
       :key="car.id"
     >
       <!-- Image -->
@@ -71,12 +156,15 @@
     </SwiperSlide>
     <div class="swiper-pagination py-2" style="top: 100%"></div>
   </Swiper>
+
+  <p v-if="vehicles.length === 0" class="text-center">No car here</p>
 </template>
 
 <script>
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { useCarStore } from '../../stores/cars'
 import { storeToRefs } from 'pinia'
+import CarBrand from '../app/CarBrand.vue'
 
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules'
@@ -97,7 +185,33 @@ export default {
 
   components: {
     Swiper,
-    SwiperSlide
+    SwiperSlide,
+    CarBrand
+  },
+
+  data() {
+    return {
+      numLenCheck,
+      brand: 'Lamborghini',
+      vehicles: []
+    }
+  },
+
+  methods: {
+    filterCarsBrand(brand = 'Lamborghini') {
+      this.brand = brand
+      //   console.log(this.brand)
+
+      this.filterCar(brand)
+    },
+
+    filterCar(brand) {
+      const carsToFilter = this.cars.filter((car) => car.company === brand)
+
+      this.vehicles = carsToFilter
+      console.log(carsToFilter)
+      //   console.log(this.vehicles)
+    }
   },
 
   setup() {
@@ -108,10 +222,10 @@ export default {
     return { cars, modules: [Navigation, Pagination, Scrollbar, A11y] }
   },
 
-  data() {
-    return {
-      numLenCheck
-    }
+  mounted() {
+    const carsToFilter = this.cars.filter((car) => car.company === 'Lamborghini')
+
+    this.vehicles = carsToFilter
   }
 }
 </script>
