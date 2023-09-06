@@ -223,7 +223,7 @@ export default {
   },
 
   mounted() {
-    const carsToFilter = this.cars.filter((car) => car.company === 'Lamborghini')
+    const carsToFilter = this.cars.filter((car) => car.company === this.brand)
 
     this.vehicles = carsToFilter
   }
