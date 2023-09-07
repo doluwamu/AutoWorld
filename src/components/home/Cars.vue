@@ -56,6 +56,7 @@ import { numLenCheck } from '../../helper/numbers'
 import { storeToRefs } from 'pinia'
 
 export default {
+  name: 'Cars',
   setup() {
     const carStore = useCarStore()
 
