@@ -1,5 +1,5 @@
 <template>
-  <section class="">
+  <section class="py-20">
     <h1 class="text-4xl text-center font-black py-10">Top sellers</h1>
 
     <div class="flex flex-col flex-wrap gap-20 justify-center px-2 sm:flex-row">
