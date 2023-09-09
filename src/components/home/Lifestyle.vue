@@ -1,5 +1,5 @@
 <template>
-  <section id="lifestyle" class="bg-black relative py-12 pr-4">
+  <section id="lifestyle" class="bg-black relative py-12 pr-4 overflow-hidden">
     <h1 class="header text-white text-center absolute md:text-9xl">LIFESTYLE</h1>
 
     <div class="flex flex-col md:flex-row">
