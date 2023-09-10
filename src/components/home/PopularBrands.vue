@@ -122,7 +122,7 @@
       <div class="flex flex-col text-black justify-evenly gap-6">
         <p class="text-left">{{ car.model }} Model</p>
 
-        <p class="text-4xl font-black text-left">{{ car.name }}</p>
+        <p class="text-4xl font-black text-left text-main">{{ car.name }}</p>
 
         <p class="text-left">{{ car.description }}</p>
 
