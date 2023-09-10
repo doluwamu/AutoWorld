@@ -143,7 +143,10 @@
         <!-- Buttons -->
         <div class="flex gap-6 md:flex-row md:gap-8">
           <!-- Buy -->
-          <a href="#" class="bg-offWhite py-2 px-4 rounded-full"
+          <a
+            href="#"
+            class="bg-white py-2 px-4 rounded-full"
+            style="box-shadow: 0 0 6px 0.9px rgb(221, 221, 221)"
             ><span class="text-black text-center">Buy</span></a
           >
 

@@ -1,43 +1,33 @@
 <template>
   <section id="lifestyle" class="z-20 bg-subGrey relative py-12 pr-4 overflow-hidden">
-    <!-- Large -->
-    <h1 class="z-20 hidden header-300px text-grey text-center absolute lg:block">LIFESTYLE</h1>
-    <!-- Medium -->
-    <h1 class="z-20 hidden header-200px text-grey text-center absolute md:block lg:hidden">
-      LIFESTYLE
-    </h1>
-    <!-- Small -->
-    <h1 class="z-20 hidden header-120px text-grey text-center absolute sm:block md:hidden">
-      LIFESTYLE
-    </h1>
-    <!-- Extra small -->
-    <h1 class="z-20 header-80px text-grey text-center absolute sm:hidden">LIFESTYLE</h1>
-
     <!-- decoration -->
     <div class="decor absolute bg-main"></div>
 
-    <div class="flex flex-col md:flex-row">
-      <img
-        src="../../assets/img/home/lifestyle.png"
-        alt="img"
-        class="mt-14 z-30 sm:mt-24 md:mt-40 md:w-2/3 lg:mt-60"
-      />
+    <!-- Large -->
+    <h1 class="z-20 hidden header-300px text-white text-center lg:block">LIFESTYLE</h1>
+    <!-- Medium -->
+    <h1 class="z-20 hidden header-200px text-white text-center md:block lg:hidden">LIFESTYLE</h1>
+    <!-- Small -->
+    <h1 class="z-20 hidden header-120px text-white text-center sm:block md:hidden">LIFESTYLE</h1>
+    <!-- Extra small -->
+    <h1 class="z-20 header-80px text-white text-center sm:hidden">LIFESTYLE</h1>
 
-      <div
-        class="flex flex-col text-black justify-center py-12 items-center z-20 md:py-2 md:mt-56 md:items-start md:w-1/3 lg:mt-40"
+    <div class="flex flex-col justify-center items-center" style="max-width: 900px; margin: 0 auto">
+      <p class="text-center text-white px-6 md:px-1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eum tempo ribus
+        dignissimos harum amet delectus magnam Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Perferendis eaque reprehenderit illum autem accusantium velit quam enim culpa,
+        dignissimos, repudiandae cum maxime, deserunt magni necessitatibus ea! Magni explicabo et
+        similique!
+      </p>
+
+      <a
+        href="/"
+        class="border border-main text-main font-black my-4 py-2 px-4 rounded-lg"
+        style="max-width: 100px"
       >
-        <p class="text-center px-6 md:px-1 md:text-justify md:max-w-xs">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eum tempo ribus
-          dignissimos harum amet delectus magnam
-        </p>
-
-        <button
-          class="border border-main text-main font-black my-4 py-2 px-4 rounded-lg"
-          style="max-width: 100px"
-        >
-          Drive in
-        </button>
-      </div>
+        Drive in
+      </a>
     </div>
   </section>
 </template>
@@ -49,11 +39,19 @@ export default {
 </script>
 
 <style>
+#lifestyle {
+  background: url(../../assets//img//home/lifestyle-bg.png) #0009;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
 #lifestyle h1 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
   width: 100%;
-  opacity: 0.7;
-  top: 40px;
+  /* opacity: 0.5; */
+  /* top: 40px; */
 }
 
 #lifestyle .header-300px {

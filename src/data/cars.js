@@ -14,7 +14,7 @@ const cars = [
     rating: '4.5',
     description:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id ratione in, tenetur autem eaque voluptatem officia consectetur laudantium minima laborum, ea quibusdam, vitae molestiae saepe optio libero hic repellendus a.',
-    price: 90000,
+    price: 50000,
     paymentPeriod: 7
   },
   {
