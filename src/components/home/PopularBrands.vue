@@ -1,5 +1,7 @@
 <template>
-  <h1 class="text-4xl text-center font-black py-10 px-2 md:text-5xl">Explore popular brands</h1>
+  <h1 class="text-4xl text-center font-black pt-20 pb-10 px-2 md:text-5xl">
+    Explore popular brands
+  </h1>
 
   <Swiper
     :slides-per-view="1.5"

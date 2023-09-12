@@ -1,10 +1,10 @@
 <template>
-  <section class="pb-20 pt-12">
+  <section class="pb-20 pt-4">
     <h1 class="text-4xl text-center font-black py-10">Top sellers</h1>
 
     <div class="flex flex-col flex-wrap gap-20 justify-center px-2 sm:flex-row">
       <div
-        class="car-card flex flex-col gap-6 sm:w-1/3"
+        class="car-card flex flex-col gap-6 md:w-1/3 lg:w-1/4"
         v-if="cars.length > 0"
         v-for="car in cars"
         :key="car.id"
@@ -42,7 +42,16 @@
       </div>
 
       <!-- Extra card -->
-      <div class="flex flex-col p-0 sm:w-1/3" style="height: 0" v-if="cars.length > 0"></div>
+      <div
+        class="flex flex-col p-0 md:w-1/3 lg:w-1/4"
+        style="height: 0"
+        v-if="cars.length > 0"
+      ></div>
+      <div
+        class="flex flex-col p-0 md:w-1/3 lg:w-1/4"
+        style="height: 0"
+        v-if="cars.length > 0"
+      ></div>
 
       <!-- No cars found -->
       <div class="font-bold text-center" v-if="cars.length < 1">No cars found</div>

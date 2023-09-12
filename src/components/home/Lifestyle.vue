@@ -4,15 +4,22 @@
     <div class="decor absolute bg-main"></div>
 
     <!-- Large -->
-    <h1 class="z-20 hidden header-300px text-white text-center lg:block">LIFESTYLE</h1>
+    <h1 class="z-20 relative hidden header-300px text-white text-center lg:block">LIFESTYLE</h1>
     <!-- Medium -->
-    <h1 class="z-20 hidden header-200px text-white text-center md:block lg:hidden">LIFESTYLE</h1>
+    <h1 class="z-20 relative hidden header-200px text-white text-center md:block lg:hidden">
+      LIFESTYLE
+    </h1>
     <!-- Small -->
-    <h1 class="z-20 hidden header-120px text-white text-center sm:block md:hidden">LIFESTYLE</h1>
+    <h1 class="z-20 relative hidden header-120px text-white text-center sm:block md:hidden">
+      LIFESTYLE
+    </h1>
     <!-- Extra small -->
-    <h1 class="z-20 header-80px text-white text-center sm:hidden">LIFESTYLE</h1>
+    <h1 class="z-20 relative header-80px text-white text-center sm:hidden">LIFESTYLE</h1>
 
-    <div class="flex flex-col justify-center items-center" style="max-width: 900px; margin: 0 auto">
+    <div
+      class="flex flex-col justify-center items-center z-20 relative"
+      style="max-width: 900px; margin: 0 auto"
+    >
       <p class="text-center text-white px-6 md:px-1">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eum tempo ribus
         dignissimos harum amet delectus magnam Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -21,13 +28,13 @@
         similique!
       </p>
 
-      <a
-        href="/"
-        class="border border-main text-main font-black my-4 py-2 px-4 rounded-lg"
+      <RouterLink
+        to="/#"
+        class="drive-in-btn border border-main text-main font-black my-4 py-2 px-4 rounded-lg cursor-pointer"
         style="max-width: 100px"
       >
         Drive in
-      </a>
+      </RouterLink>
     </div>
   </section>
 </template>
@@ -50,7 +57,7 @@ export default {
 #lifestyle h1 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
   width: 100%;
-  /* opacity: 0.5; */
+  opacity: 0.6;
   /* top: 40px; */
 }
 
@@ -69,6 +76,15 @@ export default {
 
 #lifestyle .header-80px {
   font-size: 80px;
+}
+
+.drive-in-btn {
+  transition: 0.5s;
+}
+
+.drive-in-btn:hover {
+  background-color: hsl(18, 99%, 49%);
+  color: #fff;
 }
 
 .decor {
