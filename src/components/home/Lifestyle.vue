@@ -30,7 +30,7 @@
 
       <RouterLink
         to="/#"
-        class="drive-in-btn border border-main text-main font-black my-4 py-2 px-4 rounded-lg cursor-pointer"
+        class="drive-in-btn border border-main text-white font-black bg-main my-4 py-2 px-4 rounded-lg cursor-pointer hover:bg-mainDeep hover:border-mainDeep"
         style="max-width: 100px"
       >
         Drive in
@@ -80,12 +80,19 @@ export default {
 
 .drive-in-btn {
   transition: 0.5s;
+  animation: btnBounce 0.4s infinite linear alternate;
 }
 
-.drive-in-btn:hover {
-  background-color: hsl(18, 99%, 49%);
-  color: #fff;
+@keyframes btnBounce {
+  to {
+    transform: scale(1.04);
+  }
 }
+
+/* .drive-in-btn:hover {
+  background-color: hsl(18, 93%, 40%);
+  border: 1px solid ;
+} */
 
 .decor {
   width: 3000px;

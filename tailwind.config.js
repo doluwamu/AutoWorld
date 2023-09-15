@@ -13,6 +13,7 @@ module.exports = {
     extend: {
       colors: {
         main: 'hsl(18, 99%, 49%)',
+        mainDeep: 'hsl(18, 93%, 40%)',
         subOrange: 'hsla(18, 100%, 80%, 0.1)',
         deepOrange: 'hsl(18, 99%, 30%)',
         lightOrange: 'hsl(18, 97%, 58%)',
