@@ -9,7 +9,7 @@ export default {
 <template>
   <nav class="sticky m-auto py-3 px-2">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <a href="/#tcars" class="flex items-center">
+      <a href="/" class="flex items-center">
         <img src="../../assets/img/logo.png" alt="img" style="width: 120px; height: 30px" />
       </a>
       <div class="flex md:order-2">

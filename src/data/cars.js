@@ -15,7 +15,13 @@ const cars = [
     description:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id ratione in, tenetur autem eaque voluptatem officia consectetur laudantium minima laborum, ea quibusdam, vitae molestiae saepe optio libero hic repellendus a.',
     price: 50000,
-    paymentPeriod: 7
+    paymentPeriod: 7,
+    views: {
+      side: 'https://images.unsplash.com/photo-1519688758572-9ffb93688712?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60',
+      side2: '',
+      inner: '',
+      other: ''
+    }
   },
   {
     id: 2,
@@ -27,7 +33,13 @@ const cars = [
     description:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id ratione in, tenetur autem eaque voluptatem officia consectetur laudantium minima laborum, ea quibusdam, vitae molestiae saepe optio libero hic repellendus a.',
     price: 150000,
-    paymentPeriod: 4
+    paymentPeriod: 4,
+    views: {
+      side: 'https://images.unsplash.com/photo-1519688758572-9ffb93688712?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60',
+      side2: '',
+      inner: '',
+      other: ''
+    }
   },
   {
     id: 3,
@@ -39,7 +51,13 @@ const cars = [
     description:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id ratione in, tenetur autem eaque voluptatem officia consectetur laudantium minima laborum, ea quibusdam, vitae molestiae saepe optio libero hic repellendus a.',
     price: 200000,
-    paymentPeriod: 7
+    paymentPeriod: 7,
+    views: {
+      side: 'https://images.unsplash.com/photo-1519688758572-9ffb93688712?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60',
+      side2: '',
+      inner: '',
+      other: ''
+    }
   },
   {
     id: 4,
@@ -51,7 +69,13 @@ const cars = [
     description:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id ratione in, tenetur autem eaque voluptatem officia consectetur laudantium minima laborum, ea quibusdam, vitae molestiae saepe optio libero hic repellendus a.',
     price: 150000,
-    paymentPeriod: 2
+    paymentPeriod: 2,
+    views: {
+      side: 'https://images.unsplash.com/photo-1519688758572-9ffb93688712?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60',
+      side2: '',
+      inner: '',
+      other: ''
+    }
   },
   {
     id: 5,
@@ -63,7 +87,13 @@ const cars = [
     description:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id ratione in, tenetur autem eaque voluptatem officia consectetur laudantium minima laborum, ea quibusdam, vitae molestiae saepe optio libero hic repellendus a.',
     price: 400000,
-    paymentPeriod: 2
+    paymentPeriod: 2,
+    views: {
+      side: 'https://images.unsplash.com/photo-1519688758572-9ffb93688712?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60',
+      side2: '',
+      inner: '',
+      other: ''
+    }
   }
 ]
 
