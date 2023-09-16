@@ -7,9 +7,9 @@ export default {
 </script>
 
 <template>
-  <nav class="sticky container m-auto py-3 px-2">
+  <nav class="sticky m-auto py-3 px-2">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <a href="https://flowbite.com/" class="flex items-center">
+      <a href="/#tcars" class="flex items-center">
         <img src="../../assets/img/logo.png" alt="img" style="width: 120px; height: 30px" />
       </a>
       <div class="flex md:order-2">
@@ -18,7 +18,7 @@ export default {
             href="#"
             type="button"
             class="hidden button py-2 px-4 bg-black text-white rounded-lg md:block"
-            style="max-width: 118px"
+            style="width: 118px"
           >
             Get started
           </a>
@@ -27,7 +27,7 @@ export default {
             href="#"
             type="button"
             class="hidden button py-2 px-4 bg-main text-white text-center rounded-lg md:block"
-            style="max-width: 118px"
+            style="width: 118px"
           >
             Login
           </a>
@@ -67,7 +67,7 @@ export default {
         >
           <li>
             <a
-              href="#"
+              href="/"
               class="block py-2 pl-3 pr-4 text-white text-center active:bg-blue-700 rounded hover:bg-gray-100 md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
               aria-current="page"
               >Home</a
@@ -145,6 +145,10 @@ export default {
 </template>
 
 <style>
+nav {
+  max-width: 1200px;
+}
+
 ul li a {
   color: #000 !important;
   font-weight: bolder;
