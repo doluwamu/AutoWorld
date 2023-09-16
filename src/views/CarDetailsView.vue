@@ -98,7 +98,7 @@
 <script>
 import { numLenCheck } from '../helper/numbers'
 import { useCarStore } from '../stores/cars'
-import { RouterLink } from 'vue-router'
+// import { RouterLink } from 'vue-router'
 // import { reloadScreen } from '../helper/load'
 
 export default {
@@ -130,15 +130,6 @@ export default {
     changeImgView(imgUrl) {
       // console.log(getCurrentInstance().data.image)
       return (this.image = imgUrl)
-    },
-
-    reloadScreen(car) {
-      this.$router.push({
-        name: 'carDetails',
-        params: { id: car.id },
-        query: { make: car.company, name: car.name }
-      })
-      // window.location.
     }
   }
 }
