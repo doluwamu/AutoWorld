@@ -27,7 +27,8 @@ const cars = [
       inner: '',
       other: ''
     },
-    companyLogo: toyotaLogo
+    companyLogo: toyotaLogo,
+    details: ['2k horse power engine', 'Fuel engine', '5 seater']
   },
   {
     id: 2,
@@ -46,7 +47,8 @@ const cars = [
       inner: '',
       other: ''
     },
-    companyLogo: bmwLogo
+    companyLogo: bmwLogo,
+    details: ['2k horse power engine', 'Fuel engine', '5 seater']
   },
   {
     id: 3,
@@ -65,7 +67,8 @@ const cars = [
       inner: '',
       other: ''
     },
-    companyLogo: bmwLogo
+    companyLogo: bmwLogo,
+    details: ['2k horse power engine', 'Fuel engine', '5 seater']
   },
   {
     id: 4,
@@ -84,7 +87,8 @@ const cars = [
       inner: '',
       other: ''
     },
-    companyLogo: benzLogo
+    companyLogo: benzLogo,
+    details: ['2k horse power engine', 'Fuel engine', '5 seater']
   },
   {
     id: 5,
@@ -103,7 +107,8 @@ const cars = [
       inner: '',
       other: ''
     },
-    companyLogo: lamboLogo
+    companyLogo: lamboLogo,
+    details: ['2k horse power engine', 'Electric engine', '2 seater']
   }
 ]
 

@@ -9,13 +9,7 @@
         v-for="car in cars"
         :key="car.id"
       >
-        <RouterLink
-          :to="{
-            name: 'carDetails',
-            params: { id: car.id },
-            query: { make: car.company, name: car.name }
-          }"
-        >
+        <a :href="`/car/${car.id}?make=${car.company}&name=${car.name}`">
           <!-- top -->
           <div class="">
             <div class="flex justify-between items-center">
@@ -46,7 +40,7 @@
 
             <p class="font-black text-blue">${{ numLenCheck(car.price) }}</p>
           </div>
-        </RouterLink>
+        </a>
       </div>
 
       <!-- Extra card -->
