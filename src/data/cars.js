@@ -4,6 +4,11 @@ import fiveSeries from '../assets/img/home/5-series.png'
 import mercedez from '../assets/img/home/mercedez.png'
 import revoluto from '../assets/img/home/revoluto.png'
 
+import toyotaLogo from '../assets/img/logos/toyota.png'
+import lamboLogo from '../assets/img/logos/lambo.png'
+import benzLogo from '../assets/img/logos/benz.png'
+import bmwLogo from '../assets/img/logos/bmw.png'
+
 const cars = [
   {
     id: 1,
@@ -21,7 +26,8 @@ const cars = [
       side2: '',
       inner: '',
       other: ''
-    }
+    },
+    companyLogo: toyotaLogo
   },
   {
     id: 2,
@@ -39,7 +45,8 @@ const cars = [
       side2: '',
       inner: '',
       other: ''
-    }
+    },
+    companyLogo: bmwLogo
   },
   {
     id: 3,
@@ -57,7 +64,8 @@ const cars = [
       side2: '',
       inner: '',
       other: ''
-    }
+    },
+    companyLogo: bmwLogo
   },
   {
     id: 4,
@@ -75,7 +83,8 @@ const cars = [
       side2: '',
       inner: '',
       other: ''
-    }
+    },
+    companyLogo: benzLogo
   },
   {
     id: 5,
@@ -93,7 +102,8 @@ const cars = [
       side2: '',
       inner: '',
       other: ''
-    }
+    },
+    companyLogo: lamboLogo
   }
 ]
 
