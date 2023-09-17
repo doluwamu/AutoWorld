@@ -28,7 +28,8 @@ const cars = [
       other: ''
     },
     companyLogo: toyotaLogo,
-    details: ['2k horse power engine', 'Fuel engine', '5 seater']
+    details: ['2k horse power engine', 'Fuel engine', '5 seater'],
+    sellerTel: '+00000000'
   },
   {
     id: 2,
@@ -48,7 +49,8 @@ const cars = [
       other: ''
     },
     companyLogo: bmwLogo,
-    details: ['2k horse power engine', 'Fuel engine', '5 seater']
+    details: ['2k horse power engine', 'Fuel engine', '5 seater'],
+    sellerTel: '+00000000'
   },
   {
     id: 3,
@@ -68,7 +70,8 @@ const cars = [
       other: ''
     },
     companyLogo: bmwLogo,
-    details: ['2k horse power engine', 'Fuel engine', '5 seater']
+    details: ['2k horse power engine', 'Fuel engine', '5 seater'],
+    sellerTel: '+00000000'
   },
   {
     id: 4,
@@ -88,7 +91,8 @@ const cars = [
       other: ''
     },
     companyLogo: benzLogo,
-    details: ['2k horse power engine', 'Fuel engine', '5 seater']
+    details: ['2k horse power engine', 'Fuel engine', '5 seater'],
+    sellerTel: '+00000000'
   },
   {
     id: 5,
@@ -108,7 +112,8 @@ const cars = [
       other: ''
     },
     companyLogo: lamboLogo,
-    details: ['2k horse power engine', 'Electric engine', '2 seater']
+    details: ['2k horse power engine', 'Electric engine', '2 seater'],
+    sellerTel: '+00000000'
   }
 ]
 

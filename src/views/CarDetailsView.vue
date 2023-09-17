@@ -70,7 +70,7 @@
         <div class="flex flex-col gap-6 p-4 sm:flex-row">
           <a
             class="button bg-blue text-white text-center p-2 rounded-lg md:w-1/6"
-            href="tel:+00000000000"
+            :href="`tel:${car.sellerTel}`"
             >Contact seller</a
           >
           <a class="button bg-main text-white text-center p-2 rounded-lg md:w-1/6" href="#"

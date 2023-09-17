@@ -65,7 +65,7 @@
 import { useCarStore } from '../../stores/cars'
 import { numLenCheck } from '../../helper/numbers'
 import { storeToRefs } from 'pinia'
-import { RouterLink } from 'vue-router'
+// import { RouterLink } from 'vue-router'
 
 export default {
   name: 'Cars',
