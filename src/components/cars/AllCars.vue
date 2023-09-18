@@ -60,7 +60,6 @@
 <script>
 import { useCarStore } from '../../stores/cars'
 import { numLenCheck } from '../../helper/numbers'
-import { getCurrentInstance } from 'vue'
 
 export default {
   name: 'AllCars',
@@ -73,7 +72,6 @@ export default {
   },
   mounted() {
     const carStore = useCarStore()
-    console.log(this.cars)
     // return { cars, numLenCheck }
   },
   methods: {
