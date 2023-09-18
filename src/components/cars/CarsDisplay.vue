@@ -1,6 +1,6 @@
 <template>
   <div class="flex px-2">
-    <div class="hidden md:py-8 md:px-2 md:border-r md:block md:w-1/5">
+    <div class="hidden py-8 px-2 border-r md:block md:w-1/5">
       <h1 class="text-3xl font-black py-2 text-center">Brands</h1>
       <div class="flex flex-col items-center gap-2">
         <p

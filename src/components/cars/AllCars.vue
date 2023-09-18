@@ -1,7 +1,7 @@
 <template>
   <div class="block md:h-96 md:overflow-auto md:w-4/5">
     <h1 class="pt-6 pb-12 text-3xl text-center font-bold">Cars</h1>
-    <div class="flex flex-col gap-11 justify-center flex-wrap md:flex-row">
+    <div class="flex flex-col gap-11 justify-evenly flex-wrap md:flex-row">
       <div
         class="car-card flex flex-col gap-8 md:w-1/3 lg:w-1/4"
         v-if="cars.length > 0"
