@@ -60,14 +60,29 @@
 <script>
 import { useCarStore } from '../../stores/cars'
 import { numLenCheck } from '../../helper/numbers'
+import { getCurrentInstance } from 'vue'
 
 export default {
   name: 'AllCars',
-  setup() {
+  props: ['currBrand', 'cars'],
+  data() {
+    return {
+      //   cars: this.cars,
+      numLenCheck
+    }
+  },
+  mounted() {
     const carStore = useCarStore()
-
-    const { cars } = carStore
-    return { cars, numLenCheck }
+    console.log(this.cars)
+    // return { cars, numLenCheck }
+  },
+  methods: {
+    // getCarsByBrand(b) {
+    //   const carStore = useCarStore()
+    //   const cars = carStore.getCarByBrand(b)
+    //   console.log(cars)
+    //   this.cars = cars
+    // }
   }
 }
 </script>

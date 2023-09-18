@@ -1,13 +1,18 @@
 <template>
   <div class="flex px-2">
-    <div class="hidden w-1/5 py-8 px-2 md:block">
+    <div class="hidden w-1/5 py-8 px-2 border-r md:block">
       <h1 class="text-3xl font-black py-2 text-center">Brands</h1>
-      <div class="flex flex-col items-center gap-6" v-for="(brand, i) in brands" :key="i">
-        <p class="font-bold py-3 text-center">{{ brands[i] }}</p>
+      <div class="flex flex-col items-center gap-2">
+        <p class="font-bold py-2 text-center cursor-pointer" @click="getCars">All</p>
+        <div class="flex flex-col items-center gap-2" v-for="(_, i) in brands" :key="i">
+          <p class="font-bold py-2 text-center cursor-pointer" @click="changeBrand(brands[i])">
+            {{ brands[i] }}
+          </p>
+        </div>
       </div>
     </div>
 
-    <AllCars />
+    <AllCars :cars="cars.length > 0 ? cars : allCars" />
   </div>
 </template>
 
@@ -20,10 +25,34 @@ export default {
   components: {
     AllCars
   },
+  data() {
+    return {
+      currBrand: '',
+      cars: []
+    }
+  },
   setup() {
     const carStore = useCarStore()
     const brands = carStore.getBrands()
-    return { brands }
+    const allCars = carStore.$state.cars
+    return { brands, allCars }
+  },
+  methods: {
+    changeBrand(brand) {
+      const carStore = useCarStore()
+
+      const allCars = carStore.$state.cars
+      const carsForBrand = carStore.getCarByBrand(brand)
+      const cars = carsForBrand.length > 0 ? carsForBrand : allCars
+      console.log(cars)
+      this.cars = cars
+    },
+
+    getCars() {
+      const carStore = useCarStore()
+      const cars = carStore.$state.cars
+      this.cars = cars
+    }
   }
 }
 </script>

@@ -21,6 +21,9 @@ export const useCarStore = defineStore('carStore', {
       })
 
       return brands
+    },
+    getCarByBrand(brand) {
+      return this.cars.filter((car) => car.company === brand)
     }
   }
 })
