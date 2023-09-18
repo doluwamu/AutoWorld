@@ -11,6 +11,16 @@ export const useCarStore = defineStore('carStore', {
     getCarDetailsById(carId) {
       const car = cars.find((car) => car.id === carId)
       return (this.car = car)
+    },
+    getBrands() {
+      let brands = []
+
+      this.cars.map((car, i) => {
+        if (brands.includes(car.company)) return
+        return brands.push(car.company)
+      })
+
+      return brands
     }
   }
 })

@@ -7,7 +7,6 @@
       <p class="text-center text-medium">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere sunt non itaque totam
         dolorum quasi quisquam quod porro, iure omnis. Reprehenderit veniam est ducimus ea quod
-        quidem laboriosam, exercitationem itaque. Omnis reprehenderit veniam est ducimus ea quod
         quidem laboriosam, exercitationem itaque.
       </p>
       <a
