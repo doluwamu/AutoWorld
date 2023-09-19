@@ -47,7 +47,7 @@ export default {
 
 <style>
 #lifestyle {
-  background: url(../../assets//img//home/lifestyle-bg.png) #0009;
+  background: url(../../assets/img/home/lifestyle-bg.png) #0009;
   background-blend-mode: multiply;
   background-size: cover;
   background-repeat: no-repeat;
