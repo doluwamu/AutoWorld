@@ -1,5 +1,5 @@
 <template>
-  <div class="contact-form bg-subOrange px-2 py-8 md:w-1/2 md:px-6">
+  <div class="contact-form bg-white px-8 py-8 w-full md:w-1/2 md:px-6">
     <form action="" class="flex flex-col gap-8 justify-center">
       <h1 class="text-3xl font-bold">Send us a message</h1>
 

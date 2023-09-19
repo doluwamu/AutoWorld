@@ -1,6 +1,6 @@
 <template>
-  <div class="side-img hidden md:block md:w-1/2">
-    <img src="../../assets/img/support/support.jpg" alt="img" style="height: max-content" />
+  <div class="side-img hidden py-4 md:block md:w-1/2">
+    <!-- <img src="../../assets/img/support/support.jpg" alt="img" style="height: max-content" /> -->
   </div>
 </template>
 

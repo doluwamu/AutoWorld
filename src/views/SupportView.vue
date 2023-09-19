@@ -1,5 +1,5 @@
 <template>
-  <section class="flex items-center">
+  <section class="support flex items-center justify-center p-2 sm:p-8">
     <SideImage />
     <ContactForm />
   </section>
@@ -17,3 +17,12 @@ export default {
   }
 }
 </script>
+
+<style>
+.support {
+  background: url(../assets/img/support/support.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+</style>
