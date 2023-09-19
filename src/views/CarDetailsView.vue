@@ -55,9 +55,10 @@
           <p class="py-2 text-base font-medium text-justify">{{ car.description }}</p>
         </div>
 
-        <div class="text-main font-bold border-b p-4 sm:text-2xl">
+        <p class="text-main font-bold border-b p-4 sm:text-2xl">
           Price: ${{ numLenCheck(car.price) }}
-        </div>
+          <span class="text-xl">payable within {{ car.paymentPeriod }} months</span>
+        </p>
 
         <div class="flex flex-col gap-4 border-b p-4">
           <p class="font-black sm:text-3xl">Details:</p>

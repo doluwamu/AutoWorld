@@ -2,7 +2,7 @@
   <section id="tcars" class="pb-20 pt-4">
     <h1 class="text-4xl text-center font-black py-10">Top sellers</h1>
 
-    <div class="flex flex-col flex-wrap gap-20 justify-center px-2 sm:flex-row">
+    <div class="flex flex-col flex-wrap gap-6 justify-evenly px-2 sm:flex-row">
       <div
         class="car-card flex flex-col gap-6 md:w-1/3 lg:w-1/4"
         v-if="cars.length > 0"
@@ -58,10 +58,11 @@
       <!-- No cars found -->
       <div class="font-bold text-center" v-if="cars.length < 1">No cars found</div>
     </div>
+
     <div class="full-inventory-btn flex items-center justify-center">
       <a
         href="/cars"
-        class="button bg-main text-center text-white rounded-lg py-2 px-4 text-2xl font-bold"
+        class="button bg-main text-center text-white rounded-lg py-2 px-4 md:text-2xl font-bold"
         >View full inventory</a
       >
     </div>

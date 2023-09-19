@@ -75,7 +75,7 @@ export default {
 }
 
 #lifestyle .header-80px {
-  font-size: 80px;
+  font-size: 60px;
 }
 
 .drive-in-btn {
