@@ -58,29 +58,35 @@
       <!-- No cars found -->
       <div class="font-bold text-center" v-if="cars.length < 1">No cars found</div>
     </div>
+    <div class="full-inventory-btn flex items-center justify-center">
+      <a
+        href="/cars"
+        class="button bg-main text-center text-white rounded-lg py-2 px-4 text-2xl font-bold"
+        >View full inventory</a
+      >
+    </div>
   </section>
 </template>
 
 <script>
 import { useCarStore } from '../../stores/cars'
 import { numLenCheck } from '../../helper/numbers'
-import { storeToRefs } from 'pinia'
 // import { RouterLink } from 'vue-router'
 
 export default {
   name: 'Cars',
-  setup() {
-    const carStore = useCarStore()
-
-    const { cars } = storeToRefs(carStore)
-
-    return { cars }
-  },
-
   data() {
     return {
-      numLenCheck
+      numLenCheck,
+      cars: []
     }
+  },
+  mounted() {
+    const carStore = useCarStore()
+
+    const cars = carStore.$state.cars
+
+    this.cars = cars.slice(0, 6)
   }
 }
 </script>

@@ -24,7 +24,7 @@ export default {
 
   mounted() {
     this.typed = new Typed(this.$refs.provs, {
-      strings: ['Sell', 'Buy', 'Bargain'],
+      strings: ['Sell', 'Buy', 'Ship'],
       typeSpeed: 200,
       backSpeed: 200,
       loop: true
@@ -42,7 +42,10 @@ export default {
     <div
       class="flex flex-col justify-center items-center gap-6 px-2 pt-12 md:items-start md:pt-2 md:px-8 md:w-1/2"
     >
-      <form @submit.prevent="handleSubmit" class="flex gap-2">
+      <form
+        @submit.prevent="handleSubmit"
+        class="flex gap-2 w-1/2 justify-center md:flex-row md:w-fit"
+      >
         <input
           type="text"
           placeholder="Enter email..."
