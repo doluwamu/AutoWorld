@@ -21,9 +21,9 @@
           </div>
         </div>
 
-        <div class="md:w-1/4">
-          <h1 class="py-3 text-center font-black">Navigations</h1>
-          <div class="flex flex-col items-center gap-4">
+        <div class="py-3 md:w-1/4 md:py-0">
+          <h1 class="py-3 md:text-center font-black">Navigations</h1>
+          <div class="flex flex-col md:items-center gap-4">
             <a href="/" class="font-medium text-sm">Home</a>
             <a href="/cars" class="font-medium text-sm">Cars</a>
             <a href="/support" class="font-medium text-sm">Support</a>
@@ -31,9 +31,9 @@
           </div>
         </div>
 
-        <div class="md:w-1/4">
-          <h1 class="py-3 text-center font-black">Legal</h1>
-          <div class="flex flex-col items-center gap-4">
+        <div class="py-3 md:w-1/4 md:py-0">
+          <h1 class="py-3 md:text-center font-black">Legal</h1>
+          <div class="flex flex-col md:items-center gap-4">
             <a href="/terms" class="font-medium text-sm">Terms</a>
             <a href="/conditions" class="font-medium text-sm">Conditions</a>
             <a href="/policy" class="font-medium text-sm">Policy</a>
