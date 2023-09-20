@@ -19,11 +19,11 @@
               </p>
 
               <div
-                class="flex items-center gap-1 justify-center bg-main text-center font-bold text-white rounded-lg py-1 px-3 w-1/2"
+                class="flex items-center gap-1 justify-center bg-main text-center font-bold text-white rounded-lg p-2 w-1/2"
                 style="max-width: 60px"
               >
-                <img src="../../assets/img/home/star.png" alt="img" width="20" />
-                <span>
+                <img src="../../assets/img/home/star.png" alt="img" width="15" />
+                <span class="text-xs">
                   {{ car.rating }}
                 </span>
               </div>

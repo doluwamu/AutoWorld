@@ -4,7 +4,7 @@
     <div class="bg-subOrange py-12 px-4">
       <div
         class="top-section gap-8 justify-between flex flex-wrap justify-center"
-        style="max-width: 1200px; margin: 0 auto"
+        style="max-width: 1000px; margin: 0 auto"
       >
         <div class="flex flex-col gap-4 sm:w-1/4">
           <a href="/">
