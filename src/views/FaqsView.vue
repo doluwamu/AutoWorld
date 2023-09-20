@@ -68,8 +68,6 @@ export default {
     const faqsStore = useFaqsStore()
     const { faqs } = storeToRefs(faqsStore)
 
-    console.log(faqs)
-
     return { faqs }
   }
 }
