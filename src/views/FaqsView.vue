@@ -1,12 +1,12 @@
 <template>
-  <section class="md:p-8">
+  <section class="md:p-8" style="max-width: 900px; margin: 0 auto">
     <h1 class="text-3xl py-8 text-center">FAQs</h1>
 
     <div id="accordion-collapse" data-accordion="collapse" v-for="(faq, i) in faqs" :key="i">
       <h2 :id="`accordion-open-heading-${i.toString()}`" class="border-b">
         <button
           type="button"
-          class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:bg-gray-200 hover:bg-gray-100"
+          class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-800 border border-b-0 border-gray-200 focus:bg-gray-200 hover:bg-gray-100"
           :data-accordion-target="`#accordion-open-body-${i.toString()}`"
           aria-expanded="false"
           :aria-controls="`accordion-open-body-${i.toString()}`"
@@ -49,7 +49,7 @@
         :aria-labelledby="`accordion-open-heading-${i.toString()}`"
       >
         <div class="p-5 border border-b-0 border-gray-200">
-          <p class="mb-2 text-gray-500 dark:text-gray-400">
+          <p class="mb-2 text-black">
             {{ faq.answer }}
           </p>
         </div>

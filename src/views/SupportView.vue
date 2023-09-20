@@ -20,7 +20,7 @@ export default {
 
 <style>
 .support {
-  background: url(../assets/img/support/support.jpg);
+  background: url(../assets/img/forms/support.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;

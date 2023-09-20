@@ -153,7 +153,9 @@
           >
 
           <!-- Checkout -->
-          <a href="#" class="bg-lightOrange py-2 px-4 rounded-full text-center"
+          <a
+            :href="`/car/${car.id}?make=${car.company}&name=${car.name}`"
+            class="bg-lightOrange py-2 px-4 rounded-full text-center"
             ><span class="text-white">Checkout</span></a
           >
         </div>
@@ -162,7 +164,7 @@
     <div class="swiper-pagination py-2" style="top: 100%"></div>
   </Swiper>
 
-  <p v-if="vehicles.length === 0" class="text-center">No car here</p>
+  <p v-if="vehicles.length === 0" class="text-center" style="color: red">Out of stock</p>
 </template>
 
 <script>

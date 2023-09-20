@@ -28,7 +28,7 @@
         <textarea name="message" id="" rows="7" placeholder="Write a message here"></textarea>
       </div>
 
-      <div class="flex flex-col items-center gap-2">
+      <div class="flex flex-col gap-2">
         <input
           type="button"
           value="Submit"
