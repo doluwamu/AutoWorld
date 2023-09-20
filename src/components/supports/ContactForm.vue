@@ -1,30 +1,30 @@
 <template>
   <div class="contact-form bg-white px-8 py-8 w-full md:w-1/2 md:px-6">
     <form action="" class="flex flex-col gap-8 justify-center">
-      <h1 class="text-3xl font-bold">Send us a message</h1>
+      <h1 class="text-xl font-black md:text-3xl">Send us a message</h1>
 
       <div class="flex flex-col gap-2">
-        <label for="" class="font-bold">Name:</label>
+        <label for="" class="font-bold text-sm md:text-xl">Name:</label>
         <input type="text" name="name" placeholder="Write here" required />
       </div>
 
       <div class="flex flex-col gap-2">
-        <label for="" class="font-bold">Email:</label>
+        <label for="" class="font-bold text-sm md:text-xl">Email:</label>
         <input type="email" name="email" placeholder="Write here" required />
       </div>
 
       <div class="flex flex-col gap-2">
-        <label for="" class="font-bold">Phone:</label>
+        <label for="" class="font-bold text-sm md:text-xl">Phone:</label>
         <input type="tel" name="phone" placeholder="Write here" />
       </div>
 
       <div class="flex flex-col gap-2">
-        <label for="" class="font-bold">Subject:</label>
+        <label for="" class="font-bold text-sm md:text-xl">Subject:</label>
         <input type="text" name="subject" placeholder="Write here" />
       </div>
 
       <div class="flex flex-col gap-2">
-        <label for="" class="font-bold">Message:</label>
+        <label for="" class="font-bold text-sm md:text-xl">Message:</label>
         <textarea name="message" id="" rows="7" placeholder="Write a message here"></textarea>
       </div>
 
