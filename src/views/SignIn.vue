@@ -6,13 +6,25 @@
       <h1 class="text-3xl font-black">Login</h1>
       <form action="" class="flex flex-col gap-6 pt-8">
         <div class="flex flex-col gap-2">
-          <label for="">Email:</label>
-          <input type="email" placeholder="Write here" v-model="email" required />
+          <label class="font-black">Email:</label>
+          <input
+            type="email"
+            class="placeholder:text-sm"
+            placeholder="Write here"
+            v-model="email"
+            required
+          />
         </div>
 
         <div class="flex flex-col gap-2">
-          <label for="">Password:</label>
-          <input type="password" placeholder="Write here" v-model="password" required />
+          <label class="font-black">Password:</label>
+          <input
+            type="password"
+            class="placeholder:text-sm"
+            placeholder="Write here"
+            v-model="password"
+            required
+          />
         </div>
 
         <div class="">

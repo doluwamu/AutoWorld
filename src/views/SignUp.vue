@@ -6,28 +6,58 @@
       <h1 class="text-3xl font-black">SignUp</h1>
       <form action="" class="flex flex-col gap-6 pt-8">
         <div class="flex flex-col gap-2">
-          <label for="">Username:</label>
-          <input type="text" placeholder="Write here" v-model="username" required />
+          <label class="font-black text-sm">Username:</label>
+          <input
+            type="text"
+            class="placeholder:text-sm"
+            placeholder="Write here"
+            v-model="username"
+            required
+          />
         </div>
 
         <div class="flex flex-col gap-2">
-          <label for="">Email:</label>
-          <input type="email" placeholder="Write here" v-model="email" required />
+          <label class="font-black text-sm">Email:</label>
+          <input
+            type="email"
+            class="placeholder:text-sm"
+            placeholder="Write here"
+            v-model="email"
+            required
+          />
         </div>
 
         <div class="flex flex-col gap-2">
-          <label for="">Phone:</label>
-          <input type="tel" placeholder="Write here" v-model="tel" required />
+          <label class="font-black text-sm">Phone:</label>
+          <input
+            type="tel"
+            class="placeholder:text-sm"
+            placeholder="Write here"
+            v-model="tel"
+            required
+          />
         </div>
 
         <div class="flex flex-col gap-2">
-          <label for="">Password:</label>
-          <input type="password" placeholder="Write here" v-model="password" required />
+          <label class="font-black text-sm">Password:</label>
+          <input
+            type="password"
+            class="placeholder:text-sm"
+            placeholder="Write here"
+            v-model="password"
+            required
+          />
         </div>
 
         <div class="flex flex-col gap-2">
-          <label for="">Confirm password:</label>
-          <input type="password" placeholder="Write here" v-model="confirm" required />
+          <label class="font-black text-sm">Confirm password:</label>
+          <input
+            type="password"
+            class="placeholder:text-sm"
+            placeholder="Write here"
+            v-model="confirm"
+            required
+          />
         </div>
 
         <div class="flex items-center gap-2">

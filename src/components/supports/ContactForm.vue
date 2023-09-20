@@ -4,28 +4,46 @@
       <h1 class="text-xl font-black md:text-3xl">Send us a message</h1>
 
       <div class="flex flex-col gap-2">
-        <label for="" class="font-bold text-sm md:text-xl">Name:</label>
-        <input type="text" name="name" placeholder="Write here" required />
+        <label for="" class="font-bold text-sm">Name:</label>
+        <input
+          type="text"
+          name="name"
+          class="placeholder:text-sm"
+          placeholder="Write here"
+          required
+        />
       </div>
 
       <div class="flex flex-col gap-2">
-        <label for="" class="font-bold text-sm md:text-xl">Email:</label>
-        <input type="email" name="email" placeholder="Write here" required />
+        <label for="" class="font-bold text-sm">Email:</label>
+        <input
+          type="email"
+          name="email"
+          class="placeholder:text-sm"
+          placeholder="Write here"
+          required
+        />
       </div>
 
       <div class="flex flex-col gap-2">
-        <label for="" class="font-bold text-sm md:text-xl">Phone:</label>
-        <input type="tel" name="phone" placeholder="Write here" />
+        <label for="" class="font-bold text-sm">Phone:</label>
+        <input type="tel" name="phone" class="placeholder:text-sm" placeholder="Write here" />
       </div>
 
       <div class="flex flex-col gap-2">
-        <label for="" class="font-bold text-sm md:text-xl">Subject:</label>
-        <input type="text" name="subject" placeholder="Write here" />
+        <label for="" class="font-bold text-sm">Subject:</label>
+        <input type="text" name="subject" class="placeholder:text-sm" placeholder="Write here" />
       </div>
 
       <div class="flex flex-col gap-2">
-        <label for="" class="font-bold text-sm md:text-xl">Message:</label>
-        <textarea name="message" id="" rows="7" placeholder="Write a message here"></textarea>
+        <label for="" class="font-bold text-sm">Message:</label>
+        <textarea
+          name="message"
+          id=""
+          rows="7"
+          class="placeholder:text-sm"
+          placeholder="Write a message here"
+        ></textarea>
       </div>
 
       <div class="flex flex-col gap-2">
