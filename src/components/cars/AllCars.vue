@@ -1,5 +1,5 @@
 <template>
-  <div class="block md:h-96 md:pb-8 md:overflow-auto md:w-4/5">
+  <div class="block md:h-screen md:pb-8 md:overflow-auto md:w-4/5">
     <h1 class="pt-6 pb-12 text-3xl text-center font-bold">Cars</h1>
     <div class="flex flex-col gap-11 justify-evenly flex-wrap md:flex-row">
       <div

@@ -12,6 +12,6 @@ export default {
 </script>
 
 <template>
-  <Hero />
+  <!-- <Hero /> -->
   <CarsDisplay />
 </template>
