@@ -69,8 +69,7 @@ export default {
             <li>
               <a
                 href="/"
-                class="block py-2 pl-3 pr-4 text-white text-center active:bg-blue-700 rounded hover:bg-gray-100 md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-                aria-current="page"
+                class="block py-2 pl-3 pr-4 text-gray-900 text-center rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
                 >Home</a
               >
             </li>

@@ -44,7 +44,7 @@ export default {
     >
       <form
         @submit.prevent="handleSubmit"
-        class="flex gap-2 w-1/2 justify-center md:flex-row md:w-fit"
+        class="flex gap-2 w-3/4 justify-center md:flex-row md:w-fit"
       >
         <input
           type="text"

@@ -24,5 +24,7 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
+  background-attachment: fixed;
+  background-position: center;
 }
 </style>

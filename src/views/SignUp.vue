@@ -51,6 +51,23 @@
             Already have an account? <a href="/signin" class="text-blue">Login</a>
           </p>
         </div>
+
+        <div class="">
+          <div class="" style="max-width: 300px; margin: 0 auto !important">
+            <button
+              type="button"
+              class="button flex justify-center items-center gap-3 bg-black rounded-lg text-white py-2 px-4 w-full"
+              required
+            >
+              <img
+                src="../assets/img/forms/google.png"
+                style="width: 18px; height: 18px"
+                alt="img"
+              />
+              <span>Signup with Google</span>
+            </button>
+          </div>
+        </div>
       </form>
     </div>
   </section>
@@ -82,6 +99,7 @@ export default {
   height: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .signup input {
