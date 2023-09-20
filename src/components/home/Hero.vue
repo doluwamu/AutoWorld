@@ -41,6 +41,7 @@ export default {
   <section class="hero flex flex-col-reverse py-20 px-6 bg-subOrange md:flex-row">
     <div
       class="flex flex-col justify-center items-center gap-6 px-2 pt-12 md:items-start md:pt-2 md:px-8 md:w-1/2"
+      data-aos="zoom-in"
     >
       <form
         @submit.prevent="handleSubmit"
@@ -81,7 +82,7 @@ export default {
       </a>
     </div>
 
-    <div class="flex flex-col items-center justify-center gap-6 md:w-1/2">
+    <div class="flex flex-col items-center justify-center gap-6 md:w-1/2" data-aos="fade-up">
       <img src="../../assets/img/hero-img.png" alt="img" />
     </div>
   </section>

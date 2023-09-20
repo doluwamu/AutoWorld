@@ -1,5 +1,5 @@
 <template>
-  <section id="tcars" class="pb-20 pt-4">
+  <section id="tcars" class="pb-20 pt-4" data-aos="fade-up">
     <h1 class="text-4xl text-center font-black py-10">Top sellers</h1>
 
     <div class="flex flex-col flex-wrap gap-6 justify-evenly px-2 sm:flex-row">

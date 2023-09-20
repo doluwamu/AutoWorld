@@ -1,5 +1,9 @@
 <template>
-  <section id="lifestyle" class="z-20 bg-subGrey relative py-12 pr-4 overflow-hidden">
+  <section
+    id="lifestyle"
+    class="z-20 bg-subGrey relative py-12 pr-4 overflow-hidden"
+    data-aos="fade-up"
+  >
     <!-- decoration -->
     <div class="decor absolute bg-main"></div>
 

@@ -14,6 +14,7 @@ export default {
 <template>
   <section
     class="flex flex-col justify-center gap-6 pb-10 px-4 sm:flex-wrap sm:flex-row md:flex-nowrap md:px-6"
+    data-aos="fade-up"
     style="margin-top: -40px"
   >
     <div
