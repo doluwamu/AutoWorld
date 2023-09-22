@@ -20,7 +20,7 @@ const cars = [
     name: 'Tacoma',
     company: 'Toyota',
     model: '2018',
-    rating: '4.5',
+    rating: 4.5,
     description:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id ratione in, tenetur autem eaque voluptatem officia consectetur laudantium minima laborum, ea quibusdam, vitae molestiae saepe optio libero hic repellendus a.',
     price: 50000,
@@ -41,7 +41,7 @@ const cars = [
     name: '3 Series Sedan',
     company: 'BMW',
     model: '2020',
-    rating: '4.7',
+    rating: 4.7,
     description:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id ratione in, tenetur autem eaque voluptatem officia consectetur laudantium minima laborum, ea quibusdam, vitae molestiae saepe optio libero hic repellendus a.',
     price: 150000,
@@ -62,7 +62,7 @@ const cars = [
     name: 'Kuwait',
     company: 'Audi',
     model: '2018',
-    rating: '4.6',
+    rating: 4.5,
     description:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id ratione in, tenetur autem eaque voluptatem officia consectetur laudantium minima laborum, ea quibusdam, vitae molestiae saepe optio libero hic repellendus a.',
     price: 100000,
@@ -83,7 +83,7 @@ const cars = [
     name: '5 Series Sedan',
     company: 'BMW',
     model: '2022',
-    rating: '4.8',
+    rating: 4.8,
     description:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id ratione in, tenetur autem eaque voluptatem officia consectetur laudantium minima laborum, ea quibusdam, vitae molestiae saepe optio libero hic repellendus a.',
     price: 200000,
@@ -104,7 +104,7 @@ const cars = [
     name: 'Mercedez',
     company: 'Benz',
     model: '2021',
-    rating: '4.8',
+    rating: 4.8,
     description:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id ratione in, tenetur autem eaque voluptatem officia consectetur laudantium minima laborum, ea quibusdam, vitae molestiae saepe optio libero hic repellendus a.',
     price: 150000,
@@ -125,7 +125,7 @@ const cars = [
     name: 'Revoluto',
     company: 'Lamborghini',
     model: '2023',
-    rating: '4.8',
+    rating: 4.7,
     description:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id ratione in, tenetur autem eaque voluptatem officia consectetur laudantium minima laborum, ea quibusdam, vitae molestiae saepe optio libero hic repellendus a.',
     price: 400000,
@@ -146,7 +146,7 @@ const cars = [
     name: 'Sedan',
     company: 'BMW',
     model: '2022',
-    rating: '4.6',
+    rating: 4.6,
     description:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id ratione in, tenetur autem eaque voluptatem officia consectetur laudantium minima laborum, ea quibusdam, vitae molestiae saepe optio libero hic repellendus a.',
     price: 180000,
@@ -167,7 +167,7 @@ const cars = [
     name: 'S5',
     company: 'Audi',
     model: '2020',
-    rating: '4.7',
+    rating: 4.7,
     description:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id ratione in, tenetur autem eaque voluptatem officia consectetur laudantium minima laborum, ea quibusdam, vitae molestiae saepe optio libero hic repellendus a.',
     price: 110000,

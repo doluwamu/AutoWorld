@@ -87,7 +87,9 @@ export default {
 
     const cars = carStore.$state.cars
 
-    this.cars = cars.slice(0, 6)
+    const carToShow = cars.filter((car) => car.rating >= 4.6)
+
+    this.cars = carToShow.slice(0, 6)
   }
 }
 </script>
